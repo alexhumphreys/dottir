@@ -1,3 +1,3 @@
-gem install compass
-
+gem install bundle
+bundle
 compass watch
