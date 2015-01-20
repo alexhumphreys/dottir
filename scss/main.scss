@@ -4,6 +4,7 @@ html, body, .full {
 .vertical {
   height: 100%;
   float: left;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 .left {
   background: red;

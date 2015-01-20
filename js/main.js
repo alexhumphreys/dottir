@@ -9,5 +9,5 @@ $(function() {
     $('.left, .right').each(function(i, el) {
       $(el).css('background', random_val(colors));
     });
-  }, 1000);
+  }, 3000);
 });
