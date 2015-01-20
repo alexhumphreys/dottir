@@ -6,12 +6,36 @@ html, body, .full {
   float: left;
   transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
+.absolute-center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.details {
+  width: 25%;
+  height: 30%;
+  min-width: 200px;
+  max-width: 400px;
+  background: white;
+}
 .left {
   background: red;
 }
 .middle {
-  background: green;
+  background: black;
 }
 .right {
   background: blue;
+}
+
+@media only screen and (max-width: 480px) {
+  .left, .right {
+    height: 20%;
+  }
+  .middle {
+    height: 60%;
+  }
 }
