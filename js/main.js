@@ -7,7 +7,6 @@ $(function() {
 
   createTransitionImage = function(selector, array, interval, index) {
     setInterval(function() {
-      console.log(selector, array[index]);
       $(selector).css('background', array[index]);
       if (index + 1 == array.length) {
         index = 0;
