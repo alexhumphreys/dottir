@@ -1,13 +1,22 @@
 $(function() {
-  var colors = ['RebeccaPurple' , 'Red' , 'RosyBrown' , 'RoyalBlue' , 'SaddleBrown' , 'Salmon' , 'SandyBrown' , 'SeaGreen' , 'SeaShell' , 'Sienna' , 'Silver' , 'SkyBlue' , 'SlateBlue' , 'SlateGray' , 'Snow' , 'SpringGreen' , 'SteelBlue' , 'Tan' , 'Teal' , 'Thistle' , 'Tomato' , 'Turquoise' , 'Violet' , 'Wheat', 'White' ];
 
-  var random_val = function(array) {
-    return array[Math.floor(Math.random()*array.length)];
+  var repeatTime = 3000;
+
+  var leftColors = ['RebeccaPurple' , 'Red' , 'RosyBrown' , 'RoyalBlue' , 'SaddleBrown' , 'Salmon' , 'SandyBrown' , 'SeaGreen' , 'SeaShell' , 'Sienna' , 'Silver'];
+  var rightColors = ['SkyBlue' , 'SlateBlue' , 'SlateGray' , 'Snow' , 'SpringGreen' , 'SteelBlue' , 'Tan' , 'Teal' , 'Thistle' , 'Tomato' , 'Turquoise' , 'Violet' , 'Wheat', 'White' ];
+
+  createTransitionImage = function(selector, array, interval, index) {
+    setInterval(function() {
+      console.log(selector, array[index]);
+      $(selector).css('background', array[index]);
+      if (index + 1 == array.length) {
+        index = 0;
+      } else {
+        index++;
+      }
+    }, interval);
   };
 
-  setInterval(function() {
-    $('.left, .right').each(function(i, el) {
-      $(el).css('background', random_val(colors));
-    });
-  }, 3000);
+  createTransitionImage('.left', leftColors, repeatTime, 0);
+  createTransitionImage('.right', rightColors, repeatTime, 0);
 });
