@@ -25,7 +25,7 @@ html, body, .full {
   background: red;
 }
 .middle {
-  background: black;
+  background: url("../images/background.jpg") repeat;
 }
 .right {
   background: blue;
@@ -33,9 +33,9 @@ html, body, .full {
 
 @media only screen and (max-width: 480px) {
   .left, .right {
-    height: 20%;
+    display: none;
   }
   .middle {
-    height: 60%;
+    height: 100%;
   }
 }
