@@ -1,6 +1,6 @@
 $(function() {
 
-  var repeatTime = 3000;
+  var repeatTime = 6000;
 
   var leftColors = ['RebeccaPurple' , 'Red' , 'RosyBrown' , 'RoyalBlue' , 'SaddleBrown' , 'Salmon' , 'SandyBrown' , 'SeaGreen' , 'SeaShell' , 'Sienna' , 'Silver'];
   var rightColors = ['SkyBlue' , 'SlateBlue' , 'SlateGray' , 'Snow' , 'SpringGreen' , 'SteelBlue' , 'Tan' , 'Teal' , 'Thistle' , 'Tomato' , 'Turquoise' , 'Violet' , 'Wheat', 'White' ];
