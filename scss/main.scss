@@ -4,7 +4,7 @@ html, body, .full {
 .vertical {
   height: 100%;
   float: left;
-  transition: width 2s, height 2s, background-image 2s, transform 2s;
+  transition: background-image 1s linear;
 }
 .absolute-center {
   position: absolute;
@@ -20,15 +20,24 @@ html, body, .full {
   min-width: 200px;
   max-width: 400px;
   background: white;
+
+  .logo {
+    width: 80%;
+    display: table;
+    margin: 0 auto;
+  }
 }
 .left {
   background: url("../images/l7.jpg") no-repeat;
+  background-size: cover;
 }
 .middle {
   background: url("../images/background.jpg") repeat;
+  background-size: cover;
 }
 .right {
   background: url("../images/r5.jpg") no-repeat;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 480px) {
