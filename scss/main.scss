@@ -1,6 +1,7 @@
 html, body, .full {
   height: 100%;
 }
+
 .vertical {
   height: 100%;
   float: left;
@@ -15,23 +16,34 @@ html, body, .full {
   right: 0;
 }
 .details {
-  width: 25%;
-  height: 400px;
-  min-width: 200px;
-  max-width: 500px;
+  width: 200px;
+  height: 300px;
   background: white;
+  padding: 10px 25px;
 
   .logo {
     width: 180px;
     display: table;
     margin: 0 auto;
   }
+
+  .description {
+  }
+  .address {
+    text-align: right;
+  }
+  .phone {
+  }
+  .email {
+  }
 }
+
 .left {
   background: url("../images/l7.jpg") no-repeat;
   background-size: cover;
 }
 .middle {
+  min-width: 270px;
   background: url("../images/background.jpg") repeat;
   background-size: cover;
 }
