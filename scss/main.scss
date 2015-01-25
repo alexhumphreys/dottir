@@ -109,3 +109,10 @@ html, body, .full {
   }
 
 }
+
+@media only screen and (max-height: 400px) {
+  .details {
+    height: 280px !important;
+    padding-top: 0px !important;
+  }
+}
