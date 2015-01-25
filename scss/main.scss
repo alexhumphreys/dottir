@@ -76,18 +76,35 @@ html, body, .full {
   background-size: cover;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 900px) {
   .left, .right {
-    width: 22%;
+    width: 30%;
   }
   .middle {
-    width: 56%;
+    width: 40%;
   }
 
   .details {
     .text {
       padding: 0 12px;
     }
+  }
+}
+@media only screen and (max-width: 780px) {
+  .left, .right {
+    width: 23%;
+  }
+  .middle {
+    width: 54%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .left, .right {
+    width: 22%;
+  }
+  .middle {
+    width: 56%;
   }
 }
 
