@@ -45,13 +45,13 @@ html, body, .full {
   width: 34%;
 }
 
-.left {
-  background: url("../images/l6.jpg") no-repeat;
-  background-size: cover;
-}
 .middle {
   //min-width: 269px;
   background: url("../images/background.jpg") repeat;
+  background-size: cover;
+}
+.left {
+  background: url("../images/l6.jpg") no-repeat;
   background-size: cover;
 }
 .right {
