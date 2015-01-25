@@ -5,7 +5,7 @@ html, body, .full {
 .vertical {
   height: 100%;
   float: left;
-  transition: background-image 1s linear;
+  transition: background-image 3s linear;
 }
 .absolute-center {
   position: absolute;
@@ -46,7 +46,7 @@ html, body, .full {
 }
 
 .left {
-  background: url("../images/l7.jpg") no-repeat;
+  background: url("../images/l6.jpg") no-repeat;
   background-size: cover;
 }
 .middle {

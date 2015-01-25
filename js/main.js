@@ -2,7 +2,7 @@ $(function() {
 
   var repeatTime = 6000;
 
-  var leftPics = ['l1' , 'l2' , 'l3' , 'l4' , 'l5' , 'l6' , 'l7'];
+  var leftPics = ['l1' , 'l2' , 'l3' , 'l4' , 'l5' , 'l6' ];
   var rightPics = ['r1' , 'r2' , 'r3' , 'r4' , 'r5'];
 
   createTransitionImage = function(selector, array, interval, index) {
@@ -17,5 +17,7 @@ $(function() {
   };
 
   createTransitionImage('.left', leftPics, repeatTime, 0);
-  createTransitionImage('.right', rightPics, repeatTime, 0);
+  setTimeout(function() {
+    createTransitionImage('.right', rightPics, repeatTime, 0);
+  }, 3000);
 });
