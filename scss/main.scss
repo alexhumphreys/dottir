@@ -18,7 +18,7 @@ html, body, .full {
 .details {
   width: 200px;
   height: 300px;
-  background: white;
+  background: #F9F4F0;
   padding: 10px 25px;
 
   .logo {
@@ -39,10 +39,10 @@ html, body, .full {
 }
 
 .left, .right {
-  width: 30%;
+  width: 33%;
 }
 .middle {
-  width: 40%;
+  width: 34%;
 }
 
 .left {
@@ -50,7 +50,7 @@ html, body, .full {
   background-size: cover;
 }
 .middle {
-  min-width: 270px;
+  //min-width: 269px;
   background: url("../images/background.jpg") repeat;
   background-size: cover;
 }
@@ -59,7 +59,7 @@ html, body, .full {
   background-size: cover;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 720px) {
   .left, .right {
     width: 22%;
   }
