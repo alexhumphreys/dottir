@@ -2,7 +2,7 @@ $(function() {
 
   var repeatTime = 10000;
 
-  var leftPics = ['l1', 'l2' , 'l3' , 'l4' , 'l5' , 'l6' ];
+  var leftPics = ['l1', 'l2' , 'l3' , 'l4' , 'l5' ];
   var rightPics = ['r2' , 'r3' , 'r4' , 'r5', 'r1'];
 
   function preload(arrayOfImages) {
