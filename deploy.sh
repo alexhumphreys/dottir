@@ -1,4 +1,8 @@
 #!/bin/sh
+
+# with help from
+# http://www.cyberciti.biz/tips/linux-upload-the-files-and-directory-tree-to-remote-ftp-server.html
+
 HOST='ftp.dottirberlin.com'
 USER=''
 PASSWD=''
