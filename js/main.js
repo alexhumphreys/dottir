@@ -16,6 +16,11 @@ $(function() {
     preload(rightPics);
   }
 
+  $(window).resize(function() {
+    preload(leftPics);
+    preload(rightPics);
+  });
+
   function changeImage(selector, path) {
     $(selector).css('background-image', path);
   }
