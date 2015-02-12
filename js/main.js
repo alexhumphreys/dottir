@@ -8,13 +8,13 @@ $(function() {
   function preload(arrayOfImages) {
     $(arrayOfImages).each(function(){
         $('<img/>')[0].src = "images/" + this + ".jpg";
-        // Alternatively you could use:
-        // (new Image()).src = this;
     });
   }
 
-  preload(leftPics);
-  preload(rightPics);
+  if (!Modernizr.touch) {
+    preload(leftPics);
+    preload(rightPics);
+  }
 
   function changeImage(selector, path) {
     $(selector).css('background-image', path);
