@@ -12,6 +12,7 @@ html, body, .full {
   -webkit-transition: background-image 3s linear;
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
+  -webkit-transform:translate3d(0,0,0);
 }
 .absolute-center {
   position: absolute;
