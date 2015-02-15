@@ -11,21 +11,24 @@ $(function() {
     });
   }
 
-  preload(leftPics);
-  preload(rightPics);
-
   function changeImage(selector, path) {
     $(selector).css('background-image', path);
   }
 
   createTransitionImage = function(selector, array, interval, index) {
     setInterval(function() {
-      changeImage(selector, 'url(images/' + array[index] + '.jpg)');
-      if (index + 1 == array.length) {
-        index = 0;
-      } else {
-        index++;
-      }
+      img = new Image();
+
+      img.onload = function(){
+        changeImage(selector, 'url(images/' + array[index] + '.jpg)');
+        if (index + 1 == array.length) {
+          index = 0;
+        } else {
+          index++;
+        }
+      };
+
+      img.src = "images/" + array[index] + ".jpg";
     }, interval);
   };
 
