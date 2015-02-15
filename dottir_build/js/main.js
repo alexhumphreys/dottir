@@ -11,29 +11,38 @@ $(function() {
     });
   }
 
+  function preloadImage(path, callback) {
+    img = new Image();
+
+    img.onload = function() {
+      callback();
+    }
+    img.src = path;
+
+  }
+
   function changeImage(selector, path) {
     $(selector).css('background-image', path);
   }
 
   createTransitionImage = function(selector, array, interval, index) {
     setInterval(function() {
-      img = new Image();
-
-      img.onload = function(){
+      preloadImage('images/' + array[index] + '.jpg', function() {
         changeImage(selector, 'url(images/' + array[index] + '.jpg)');
         if (index + 1 == array.length) {
           index = 0;
         } else {
           index++;
         }
-      };
-
-      img.src = "images/" + array[index] + ".jpg";
+      });
     }, interval);
   };
 
   setTimeout(function() {
-    changeImage('.right', 'url(images/r1.jpg)');
+    var path = 'images/r1.jpg';
+    preloadImage(path, function() {
+      changeImage('.right', 'url(' + path + ')');
+    });
   }, 5000);
 
   createTransitionImage('.left', leftPics, repeatTime, 0);
