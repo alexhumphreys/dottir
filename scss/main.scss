@@ -33,6 +33,11 @@ html, body, .full {
 
   a {
     color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #89B09E;
   }
 
   .logo {
