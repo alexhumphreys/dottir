@@ -24,12 +24,11 @@ html, body, .full {
   right: 0;
 }
 .details {
-  width: 23%;
   min-width: 200px;
   max-width: 250px;
-  height: 331px;
+  height: 315px;
   background: #F9F4F0;
-  padding: 32px 25px 0px 25px;
+  padding: 0 9px 0 7px;
 
   a {
     color: black;
@@ -40,10 +39,14 @@ html, body, .full {
     color: #89B09E;
   }
 
+  p {
+    margin-bottom: 23px;
+  }
+
   .logo {
-    width: 180px;
+    width: 246px;
     display: table;
-    margin: 0 auto;
+    margin: -9px 0 -10px 0;
   }
 
   .text {
@@ -58,18 +61,18 @@ html, body, .full {
   }
 
   .phone {
-    margin-bottom: 0px;
+    margin-top: 0px;
   }
   .email {
-    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
 .left, .right {
-  width: 33%;
+  width: 31%;
 }
 .middle {
-  width: 34%;
+  width: 38%;
 }
 
 .middle {
@@ -137,9 +140,3 @@ html, body, .full {
 
 }
 
-@media only screen and (max-height: 400px) {
-  .details {
-    height: 280px !important;
-    padding-top: 0px !important;
-  }
-}
