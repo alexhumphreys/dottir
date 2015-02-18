@@ -14,5 +14,6 @@ cp index.html $FILE
 cp -r css $FILE
 cp -r js $FILE
 cp -r images $FILE
+cp -r webfonts $FILE
 
 ncftpput -R -v -u $USER -p $PASSWD $HOST / $FILE

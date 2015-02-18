@@ -9,6 +9,7 @@ html, body, .full {
   height: 100%;
   float: left;
   transition: background-image 3s linear;
+  -moz-transition: background-image 3s linear;
   -webkit-transition: background-image 3s linear;
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
